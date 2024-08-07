@@ -1,5 +1,36 @@
 
 
+a {
+  text-decoration: none;
+  font-size: 17px;
+}
+
+p {
+  font-size: 17px;
+}
+
+a:hover {
+  color: #0a75e0ee !important;
+}
+
+i {
+  font-size: 30px;
+}
+
+#yt:hover {
+  color: #f80000 !important;
+}
+
+#tw:hover{
+ color: #535050 !important; 
+}
+
+#gg:hover {
+  color: #008CBA !important;
+}
+
+
+
 .container-fluid .navbar-brand {
     font-size: 18px;
     font-style: italic;
