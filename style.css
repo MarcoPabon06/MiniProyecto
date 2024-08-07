@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(214, 205, 199);
+}
+
+.card   {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(73, 63, 52, 0.4);
+}
+
+.card .content {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.card .content li {
+    padding-top: 8px;
+    font-size: small;
+    text-align: left;
+}
+
+.card .content .img {
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+.card .content .img img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+
+}
+.card .content span {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    background: linear-gradient(to right, #3397da, #47314b);
+    transform: rotate(-35deg);
+    top: -50px;
+    left: -100px;
+}
+
+.card .content h4 {
+    font-size: 18px;
+    color:black;
+    margin-bottom: 5px;
+}
+
+.card .content h6 {
+    font-size: 13px;
+    color: darkmagenta;
+}
+
+.card .content p {
+    font-size: 13px;
+    color: black;
+    margin-top: 7px;
+    margin-bottom: 13px;
+}
+
+.card .links {
+    position: absolute;
+    z-index:90;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+    padding: 20px;
+    align-items: center;
+    right: 10px;
+    top: 15px;
+    transition: .5s;
+}
+
+.card:hover .links {
+    right: -50px;
+    border-radius: 0 10px 10px 0;
+}
+
+.card .links a {
+    font-size: 20px;
+    color: #474449;
+}
+
+.card .links a:nth-child(1):hover {
+    color: #1370db;
+}
+
+.card .links a:nth-child(2):hover {
+    color: #6e05ac;
+}
+
+.card .links a:nth-child(3):hover {
+    color: #db1313;
+}
+
+.card .links a:nth-child(4):hover {
+    color: darkmagenta;
+}

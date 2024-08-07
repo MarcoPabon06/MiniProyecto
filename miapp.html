@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div>
+      <h2 style="text-align: center; margin-top: 25px;">Tabla de Registro</h2>
+    </div>
+    <form class="row g-3" style="margin-left: 10px; margin-top: 10px; margin-right: 6px;">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputUsername" class="form-label">Username</label>
+          <input type="text" class="form-control" id="inputUsername">
+        </div>
+        <div class="col-md-12">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-6">
+          <button type="button" class="btn btn-primary" onclick="Guardar()">Guardar</button>
+        </div>
+        <div class="col-6">
+            <button type="button" class="btn btn-danger" onclick="eraselast()">Eliminar</button>
+          </div>
+      </form>
+    
+    <div>
+        <table class="table table-striped" style="margin-top: 60px;">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Email</th>
+                <th scope="col">Usuario</th>
+                <th scope="col">Ciuidad</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody id="datacontainer">
+
+            </tbody>
+          </table>
+    </div>
+
+    <script>
+        var forminfo = []
+        var container = document.getElementById("datacontainer")
+
+
+
+        var fillin = function(){
+            container.innerHTML = ""
+            for (let a = 0; a < forminfo.length; a++) {
+                container.innerHTML = container.innerHTML + `<tr>
+                                                                <td>${a+1}</td>
+                                                                <td>${forminfo[a].correo}</td>
+                                                                <td>${forminfo[a].usuario}</td>
+                                                                <td>${forminfo[a].ciudad}</td>
+                                                                <td><button onclick="deleteoption(${a})">Remover</button></td>
+                                                            </tr>`
+            }
+                
+    
+        }
+
+        var Guardar = function(){
+            event.preventDefault(); //Previene el envío del formulario y la recarga de la página
+
+            var correo = document.getElementById("inputEmail4").value
+            var usuario = document.getElementById("inputUsername").value
+            var ciudad = document.getElementById("inputCity").value
+
+            forminfo.push({ correo:correo, usuario:usuario, ciudad:ciudad })
+            fillin()
+            console.log(forminfo)
+
+        }
+
+        var eraselast = function(){
+            event.preventDefault();
+            
+                forminfo.pop()
+                fillin()
+                console.log(forminfo)
+
+            }
+        
+        var deleteoption = function(position){
+          forminfo.splice(position, 1)
+          fillin()
+        }
+
+        
+
+
+    
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

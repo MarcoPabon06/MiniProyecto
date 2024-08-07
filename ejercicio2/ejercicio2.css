@@ -1,0 +1,29 @@
+body h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.container {
+    width: 350px;
+    border: solid;
+    border-radius: 18px;
+    padding: 30px;
+    background-color: rgb(216, 205, 205);
+}
+
+#container2 {
+    margin-top: 45px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div#seachindex {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-style: italic;
+    border: solid 2px;
+    padding: 20px;
+    border-radius: 15px;
+}

@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    border: solid rgba(64, 70, 122, 0.685);
+    box-shadow: 2px 3px 5px rgba(73, 63, 52, 0.4);
+    background-color: rgba(247, 216, 131, 0.301);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(228, 154, 63);
+}
+
+.content {
+    text-align: center;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+.container-fluid p {
+    padding-left: 6px;
+}
