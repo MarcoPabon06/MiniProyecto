@@ -1,13 +1,13 @@
-var data = []
-var selectedposition = ""
+let data = []
+let selectedposition = ""
 
 
-var save = function() {
+let save = function() {
     
 
-    var name = document.getElementById("name").value
-    var lastname1 = document.getElementById("lastname1").value
-    var usercode = document.getElementById("usercode").value
+    let name = document.getElementById("name").value
+    let lastname1 = document.getElementById("lastname1").value
+    let usercode = document.getElementById("usercode").value
 
     data.push({name:name, lastname1:lastname1, usercode:usercode})
     localStorage.setItem("database",JSON.stringify(data))
@@ -17,11 +17,11 @@ var save = function() {
 
 }
 
-var load = function() {
+let load = function() {
 
     data = JSON.parse(localStorage.getItem("database"))
 
-    var maindata = document.getElementById("maindata")
+    let maindata = document.getElementById("maindata")
     maindata.innerHTML = ""
 
     for (let a = 0; a < data.length; a++) {
@@ -41,7 +41,7 @@ var load = function() {
 }
 
 
-var cleandata = function() {
+let cleandata = function() {
     document.getElementById("name").value = "";
     document.getElementById("lastname1").value = "";
     document.getElementById("usercode").value = "";
@@ -49,16 +49,16 @@ var cleandata = function() {
 
 }
 
-var deleteinfo = function(position){
+let deleteinfo = function(position){
     data.splice(position,1)
     localStorage.setItem("database",JSON.stringify(data))
     load()
 
 }
 
-var deletebyinput = function() {
-    var searchbar = document.getElementById("searchbar").value
-    var position = data.findIndex((item) => item.usercode === searchbar)
+let deletebyinput = function() {
+    let searchbar = document.getElementById("searchbar").value
+    let position = data.findIndex((item) => item.usercode === searchbar)
     if (position == -1) {
         alert("El codigo no se encuentra registrado en nuestra base de datos.")
     }
@@ -71,7 +71,7 @@ var deletebyinput = function() {
     }
 }
 
-var update = function() {
+let update = function() {
     data[selectedposition].name = document.getElementById("name").value
     data[selectedposition].lastname1 = document.getElementById("lastname1").value
     data[selectedposition].usercode = document.getElementById("usercode").value
@@ -81,7 +81,7 @@ var update = function() {
 
 }
 
-var selectinput = function (position) {
+let selectinput = function (position) {
     selectedposition = position
     document.getElementById("name").value = data[position].name;
     document.getElementById("lastname1").value = data[position].lastname1;
