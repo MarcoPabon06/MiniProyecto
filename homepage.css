@@ -190,3 +190,12 @@ li {
 
 }
 
+#spacing {
+  margin-top: 55px;
+}
+
+#button1 {
+  color: #312e2e !important;
+  border: solid;
+  border-radius: 15px;
+}
