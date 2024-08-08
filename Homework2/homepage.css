@@ -69,7 +69,7 @@ i {
 
   .content {
     margin-top: 56px; /* Altura del navbar */
-    height: 2000px; /* Para propósitos de prueba, asegura que haya suficiente contenido para hacer scroll */
+    height: auto; /* Para propósitos de prueba, asegura que haya suficiente contenido para hacer scroll */
   }
 
   #primertexto {
@@ -97,7 +97,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+    color: #f7f7f7;
     text-align: center;
     overflow: hidden;
   }
