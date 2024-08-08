@@ -175,3 +175,18 @@ li {
 .col {
   padding-top: 40px;
 }
+
+#maintext {
+  margin-top: 10px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 36px;
+}
+
+#maintitle {
+  font-size: 70px;
+  margin-bottom: 40px;
+
+}
+
