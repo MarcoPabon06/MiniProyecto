@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HomePage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </head>
+  <body>
+    <header class="header">
+      <video autoplay muted loop id="bg-video">
+        <source src="./presets/5736057-hd_1920_1080_24fps.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="overlay"></div>
+      <h1>Calma Tu Mente</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./homepage.html">
+            <img src="./presets/Logo-removebg-preview.png" alt="Logo" width="32" height="26" class="d-inline-block align-text-top">
+                Calma Tu Mente
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active nav-item-border " aria-current="page" href="#">Meditacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active nav-item-border " aria-current="page" href="#">Rutinas de Bienestar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active nav-item-border " aria-current="page" href="./aboutus.html">Acerca de Nosotros</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">              
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">    
+            </form>
+            <div class="dropdown text-end">
+              <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="true">
+                <img src="./presets/Profile Picture.jpeg" alt="mdo" width="32" height="32" class="rounded-circle">              
+              </a>
+              <ul class="dropdown-menu text-small" style="position: absolute;inset: 0px 0px auto auto;margin: 0px;transform: translate(0px, 45px);" data-popper-placement="bottom-end">
+                <li>
+                  <a class="dropdown-item" href="#">Perfil</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Configuracion</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Estadisticas</a>          
+                </li>
+                <li>
+                  <hr class="dropdown-divider">                  
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Cerrar Sesion</a> 
+                </li>
+              </ul>
+            </div>    
+          </div>        
+        </div>
+      </nav>
+      <hr>
+      <div class="text-center text-dark mt-5">
+        <h1 id="maintitle">Pensar en tu bienestar es nuestra prioridad</h1>
+        <p id="maintext">En Calma Tu Mente, creemos firmemente que el bienestar de nuestros clientes es la piedra angular de todo lo que hacemos. Nos dedicamos a crear un entorno donde cada individuo pueda prosperar tanto física como emocionalmente. Nuestro compromiso va más allá de ofrecer productos y servicios de alta calidad; se extiende a brindar un apoyo integral que fomente un estilo de vida saludable y equilibrado.</p>
+      </div>
+      <div id="spacing" class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6">
+                <p class="d-inline-flex gap-4" id="mainbuttons">
+                    <button id="button1"  data-bs-toggle="collapse" type="button" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Como Empezar a Cuidar tu Bienestar Mental</button>
+                    <button id="button1"  type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Qué nos hace diferentes de los demás</button>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <section class="wellness-section mb-4">
+                        <h2>Cómo empezar a enfocarte en tu salud y bienestar mental</h2>
+                        <p>Empezar a enfocarte en tu salud y bienestar mental puede ser sencillo si sigues algunos pasos clave:</p>
+                        <ul>
+                            <li><strong>Establece una Rutina:</strong> Organiza tu día con actividades que te ayuden a mantener un equilibrio entre trabajo, descanso y ocio. Establecer una rutina regular puede proporcionar estructura y estabilidad.</li>
+                            <li><strong>Ejercicio Regular:</strong> La actividad física no solo beneficia tu salud física, sino que también libera endorfinas, las cuales mejoran tu estado de ánimo y reducen el estrés.</li>
+                            <li><strong>Alimentación Saludable:</strong> Una dieta equilibrada rica en frutas, verduras y proteínas puede influir positivamente en tu bienestar mental. Evita el consumo excesivo de azúcar y cafeína.</li>
+                            <li><strong>Práctica de la Meditación o Mindfulness:</strong> Estas técnicas pueden ayudarte a reducir el estrés, mejorar tu concentración y fomentar una sensación de calma y bienestar.</li>
+                            <li><strong>Dormir Bien:</strong> Asegúrate de tener un sueño reparador, ya que la falta de sueño puede afectar negativamente tu estado de ánimo y tu capacidad de manejar el estrés.</li>
+                            <li><strong>Conexiones Sociales:</strong> Mantén relaciones positivas y busca apoyo en amigos, familiares o grupos de apoyo. Hablar con otros puede proporcionar alivio emocional y perspectivas diferentes.</li>
+                            <li><strong>Actividades Recreativas:</strong> Dedica tiempo a hobbies y actividades que disfrutes. Esto puede ser una excelente manera de relajarte y desconectar del estrés diario.</li>
+                        </ul>
+                        <p>Incorporar estos hábitos en tu vida diaria puede ser un gran primer paso hacia una mejor salud y bienestar mental. Recuerda que es un proceso continuo y es importante ser paciente y constante.</p>
+                    </section>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <section class="differentiation-section mb-4">
+                        <h2>Qué nos hace diferentes de los demás</h2>
+                        <ul>
+                            <li><strong>Enfoque Personalizado:</strong> Nos dedicamos a proporcionar un enfoque personalizado que se adapta a las necesidades individuales de cada cliente. Nos tomamos el tiempo para entender tus objetivos y diseñar soluciones que realmente funcionen para ti.</li>
+                            <li><strong>Calidad y Compromiso:</strong> Nos enorgullece ofrecer productos y servicios de la más alta calidad. Cada detalle es importante para nosotros, y nos comprometemos a superar tus expectativas en cada proyecto.</li>
+                            <li><strong>Innovación Constante:</strong> Estamos en constante búsqueda de nuevas ideas y tecnologías para mejorar nuestra oferta. Nuestra capacidad para innovar nos permite estar siempre un paso adelante y ofrecerte lo mejor del mercado.</li>
+                            <li><strong>Atención al Cliente Excepcional:</strong> Creemos que una comunicación clara y un soporte efectivo son clave para el éxito. Nuestro equipo de atención al cliente está siempre disponible para ayudarte en lo que necesites, asegurando una experiencia sin problemas.</li>
+                            <li><strong>Experiencia y Profesionalismo:</strong> Contamos con un equipo de profesionales con amplia experiencia en el campo. Nuestra experiencia nos permite abordar cualquier desafío con confianza y ofrecer soluciones efectivas y eficientes.</li>
+                            <li><strong>Valores y Ética:</strong> Operamos con una fuerte ética de trabajo y valores que guían todas nuestras decisiones. Creemos en la transparencia, la honestidad y en construir relaciones de confianza con nuestros clientes.</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="content">  
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./presets/pexels-lucaspezeta-2529375.jpg" class="d-block w-100 carousel-img" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./presets/pexels-thought-catalog-317580-904616.jpg" class="d-block w-100 carousel-img" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./presets/pexels-gabby-k-5302897.jpg" class="d-block w-100 carousel-img" style="width: 120px;" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <footer class="bg-light text-dark pt-5 pb-4 mt-4">
+        <div class="container text-center text-md-start">
+          <div class="row text-center text-md-start">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold">Sobre Nosotros</h5>
+              <hr class="mb-4">
+              <p>Calma Tu Mente te ayuda a encontrar la paz interior y mejorar tu calidad de vida a través de meditaciones guiadas, ejercicios de respiración y herramientas de seguimiento de progreso. Únete a nosotros y transforma tu bienestar mental día a día.</p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold">Dejanos ayudarte</h5>
+              <hr class="mb-4">
+              <p>
+                <a href="#" class="text-dark">Tu Perfil</a>
+              </p>
+              <p>
+                <a href="#" class="text-dark">Tus Estadisticas</a>
+              </p>
+              <p>
+                <a href="#" class="text-dark">Preguntas Frequentes</a>
+              </p>
+              <p>
+                <a href="#" class="text-dark">Terminos y Condiciones</a>
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold">Articulos de Interes</h5>
+              <hr class="mb-4">
+              <p>
+                <a href="https://www.forbes.com.mx/forbes-life/salud-5-acciones-que-puedes-hacer-todos-los-dias-para-tu-bienestar/" class="text-dark" target="_blank">Mejora tu bienestar diario</a>
+              </p>
+              <p>
+                <a href="https://psicologiamentesalud.com/mejora-tu-bienestar-emocional-con-estos-15-habitos-saludables/" class="text-dark" target="_blank">Mejora tu bienestar diario</a>
+              </p>
+              <p>
+                <a href="https://www.psicoactiva.com/blog/que-es-mindfulness/" class="text-dark" target="_blank">Beneficios del mindfulness</a>
+              </p>
+              <p>
+                <a href="https://www.hola.com/estar-bien/20211226201798/el-habito-que-puede-cambiar-tu-vida/" class="text-dark" target="_blank">Bienestar en el trabajo</a>
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold">Contacto</h5>
+              <hr class="mb-4">
+              <p>
+                <li class="fas fa-home me-3"></li>Bogota, Colombia
+              </p>
+              <p>
+                <li class="fas fa-envelope me-3"></li>info@mailus.com
+              </p>
+              <p>
+                <li class="fas fa-phone me-3"></li>+57 3213105237
+              </p>
+            </div>
+            <hr class="mb-4">
+            <div class="text-center mb-2">
+              <p>Copyright © Todos los derechos reservados
+                <a href="https://www.linkedin.com/in/marco-pabon/" target="_blank">
+                  <strong class="text-primary">Marco Pabon</strong>
+                </a>
+              </p>
+            </div>
+            <div class="text-center">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="text-dark"><i id="fb" class="fab fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-dark"><i id="tw" class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-dark"><i id="gg" class="fab fa-google-plus"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-dark"><i id="yt" class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>             
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta3/js/bootstrap.min.js"></script>
+      <script src="./scripts.js"></script>
+      <script src="/homepage.js"></script>
+  </body>
+</html>
